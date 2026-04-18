@@ -127,9 +127,25 @@ export const ContactForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    
+    try {
+      // Netlifyの中継地点（send-email.js）へデータを送る
+      const response = await fetch('/.netlify/functions/send-email', {
+        method: 'POST',
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        // 送信が成功したら「送信完了」の画面に切り替える
+        setIsSubmitted(true);
+      } else {
+        alert('送信に失敗しました。時間をおいて再度お試しください。');
+      }
+    } catch (error) {
+      alert('通信エラーが発生しました。');
+    }
   };
 
   if (isSubmitted) {
