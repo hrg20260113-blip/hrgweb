@@ -97,7 +97,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <p className="text-[#D4AF37] text-xs tracking-widest mb-2" style={{ fontWeight: 700 }}>メールアドレス</p>
-                    <p className="text-white text-sm" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}><a href="mailto:saiyou@hrg-co.jp" className="hover:text-[#D4AF37] transition-colors">saiyou@hrg-co.jp</a></p>
+                    <p className="text-white text-sm" style={{ fontFamily: "'Noto Sans JP', sans-serif" }}><a href="mailto:hrg.20260113@gmail.com" className="hover:text-[#D4AF37] transition-colors">hrg.20260113@gmail.com</a></p>
                   </div>
                 </div>
               </div>
