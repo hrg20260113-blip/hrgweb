@@ -116,7 +116,7 @@ export const Layout = () => {
               className="absolute bottom-8 sm:bottom-12 flex flex-col items-center gap-2"
             >
               <a href="tel:090-3333-1979" className="text-[#D4AF37] text-xs tracking-widest">090-3333-1979</a>
-              <a href="mailto:umeo0613@gmail.com" className="text-[#99A1AF] text-xs tracking-wider">umeo0613@gmail.com</a>
+              <a href="mailto:hrg.20260113@gmail.com" className="text-[#99A1AF] text-xs tracking-wider">hrg.20260113@gmail.com</a>
             </motion.div>
           </motion.div>
         )}
@@ -193,8 +193,8 @@ export const Layout = () => {
                   </a>
                 </p>
                 <p>
-                  <a href="mailto:saiyou@hrg-co.jp" className="hover:text-[#D4AF37] transition-colors">
-                    saiyou@hrg-co.jp
+                  <a href="mailto:hrg.20260113@gmail.com" className="hover:text-[#D4AF37] transition-colors">
+                    hrg.20260113@gmail.com
                   </a>
                 </p>
               </div>
